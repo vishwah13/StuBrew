@@ -7,6 +7,7 @@
 #include "AttachComponent.generated.h"
 
 
+//class UMotionControllerComponent;
 UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class STUBREW_API UAttachComponent : public USceneComponent
 {
@@ -15,11 +16,14 @@ class STUBREW_API UAttachComponent : public USceneComponent
 public:	
 	// Sets default values for this component's properties
 	UAttachComponent();
+	
 	UPROPERTY(EditDefaultsOnly, Category = "attach")
 	bool bIsAttached = false;
 
 	UFUNCTION(BlueprintCallable)
 	void ValveRotate();
+	//UFUNCTION(BlueprintCallable)
+	//void LeverMovement(UMotionControllerComponent* motionController);
 
 protected:
 	// Called when the game starts
