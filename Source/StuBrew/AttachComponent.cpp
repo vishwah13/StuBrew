@@ -2,7 +2,7 @@
 
 
 #include "AttachComponent.h"
-//#include "MotionControllerComponent.h"
+#include "MotionControllerComponent.h"
 
 // Sets default values for this component's properties
 UAttachComponent::UAttachComponent()
@@ -20,15 +20,15 @@ void UAttachComponent::ValveRotate()
 
 }
 
-//void UAttachComponent::LeverMovement(UMotionControllerComponent* motionController)
-//{
-//	if (motionController->GetComponentLocation().Z > 0) {
-//		GetAttachParent()->GetAttachParent()->SetRelativeRotation(FRotator(0, motionController->GetComponentLocation().Z, 0));
-//	}
-//	else {
-//		GetAttachParent()->GetAttachParent()->SetRelativeRotation(FRotator(0, motionController->GetComponentLocation().Z, 0));
-//	}
-//}
+void UAttachComponent::LeverMovement()
+{
+	/*if (motionController->GetComponentLocation().Z > 0) {
+		GetAttachParent()->GetAttachParent()->SetRelativeRotation(FRotator(0, motionController->GetComponentLocation().Z, 0));
+	}
+	else {
+		GetAttachParent()->GetAttachParent()->SetRelativeRotation(FRotator(0, motionController->GetComponentLocation().Z, 0));
+	}*/
+}
 
 // Called when the game starts
 void UAttachComponent::BeginPlay()

@@ -7,7 +7,8 @@
 #include "AttachComponent.generated.h"
 
 
-//class UMotionControllerComponent;
+
+
 UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class STUBREW_API UAttachComponent : public USceneComponent
 {
@@ -23,11 +24,13 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ValveRotate();
 	//UFUNCTION(BlueprintCallable)
-	//void LeverMovement(UMotionControllerComponent* motionController);
+	void LeverMovement();
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	//UPROPERTY(EditDefaultsOnly, Category = "Controller")
+	//UMotionControllerComponent* motionController = nullptr;
 
 public:	
 	// Called every frame
