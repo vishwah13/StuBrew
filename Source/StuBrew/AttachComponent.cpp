@@ -2,7 +2,7 @@
 
 
 #include "AttachComponent.h"
-#include "MotionControllerComponent.h"
+//#include "MotionControllerComponent.h"
 
 // Sets default values for this component's properties
 UAttachComponent::UAttachComponent()
